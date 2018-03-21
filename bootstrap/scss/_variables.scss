@@ -1,0 +1,27 @@
+
+// Components
+$border-width: 1px !default;
+
+$component-active-bg:  theme-color("primary") !default;
+
+$transition-base: all .2s ease-in-out !default;
+
+// Fonts
+$font-weight-light:  300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold:   700 !default;
+
+// Forms + Buttons
+
+$input-btn-border-width: $border-width !default;
+
+$input-btn-focus-width: .2rem !default;
+$input-btn-focus-color: rgba($component-active-bg, .25) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+// Buttons
+$btn-border-width: $input-btn-border-width !default;
+
+$btn-font-weight: $font-weight-normal !default;
+
+$btn-focus-box-shadow: $input-btn-focus-box-shadow !default;

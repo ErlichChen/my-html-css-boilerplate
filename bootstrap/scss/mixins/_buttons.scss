@@ -1,0 +1,11 @@
+
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    line-height: $font-height;
+    @if $enable-rounded {
+        border-radius: $border-radius;
+    } @else {
+        border-radius: 0;
+    }
+}

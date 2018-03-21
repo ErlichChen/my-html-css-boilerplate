@@ -1,0 +1,31 @@
+{
+  "name": "my-html-css-boilerplate",
+  "version": "0.0.1",
+  "description": "My boilerplate for showing html css and other front web tech",
+  "author": "chenxuewei",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "2.23.6",
+    "del": "^3.0.0",
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-sass": "3.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
