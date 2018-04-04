@@ -11,7 +11,34 @@
     "start": "gulp",
     "test": "test"
   },
-  "dependencies": {},
+  "paths": {
+    "src": {
+      "base:": "./src/",
+      "html": "./src/html/",
+      "css": "./src/css/",
+      "scss": "./src/scss/",
+      "js": "./src/js/",
+      "img": "./src/img/",
+      "fonts": "./src/fonts/"
+    },
+    "dist": {
+
+    },
+    "build": {
+
+    },
+    "bootstrap": {
+      "src": [
+        "./node_modules/bootstrap/dist/**/*",
+        "!./node_modules/bootstrap/dist/css/bootstrap-grid*",
+        "!./node_modules/bootstrap/dist/css/bootstrap-reboot*"
+      ],
+      "dest": "./vendor/bootstrap"
+    }
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0"
+  },
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-preset-env": "1.6.1",
@@ -24,8 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "gulp": "3.9.1",
-    "gulp-babel": "^7.0.1",
-    "gulp-sass": "3.1.0",
+    "gulp-load-plugins": "^1.5.0",
     "run-sequence": "^2.2.1"
   }
 }
