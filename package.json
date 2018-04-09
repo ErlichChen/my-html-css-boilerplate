@@ -14,7 +14,7 @@
   "paths": {
     "src": {
       "base:": "./src/",
-      "html": "./src/html/",
+      "html": "./src/html/**/*.html",
       "css": "./src/css/",
       "scss": "./src/scss/",
       "js": "./src/js/",
@@ -22,7 +22,13 @@
       "fonts": "./src/fonts/"
     },
     "dist": {
-
+      "base:": "./dist/",
+      "html": "./dist/html/",
+      "css": "./dist/css/",
+      "scss": "./dist/scss/",
+      "js": "./dist/js/",
+      "img": "./dist/img/",
+      "fonts": "./dist/fonts/"
     },
     "build": {
 
@@ -52,6 +58,10 @@
     "eslint-plugin-react": "^7.7.0",
     "gulp": "3.9.1",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-useref": "^3.1.5",
+    "gulp-if": "^2.0.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-size": "^3.0.0",
     "run-sequence": "^2.2.1"
   }
 }

@@ -31,3 +31,28 @@ gulp.task('vendor', () => {
   // Bootstrap
   gulp.src(pkg.paths.bootstrap.src).pipe(gulp.dest(pkg.paths.bootstrap.dest));
 });
+
+// Scan HTML for asserts & optimize them
+gulp.task('html', () => {
+  return gulp.src(pkg.paths.src.html)
+    .pipe($.useref({
+      searchPath: '{.tmp,app}',
+      noAssets: true,
+    }))
+    // Minify any HTML
+    .pipe($.if('*.html', $.htmlmin({
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      removeAttributeQuotes: true,
+      removeRedundantAttributes: true,
+      removeEmptyAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      removeOptionalTags: true,
+    })))
+    // Output files
+    .pipe($.if('*.html', $.size({ title: 'html', showFiles: true })))
+    .pipe(gulp.dest(pkg.paths.dist.html));
+});
+
