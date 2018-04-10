@@ -13,7 +13,6 @@
   },
   "paths": {
     "src": {
-      "base:": "./src/",
       "html": "./src/html/**/*.html",
       "css": "./src/css/",
       "scss": "./src/scss/",
@@ -22,7 +21,6 @@
       "fonts": "./src/fonts/"
     },
     "dist": {
-      "base:": "./dist/",
       "html": "./dist/html/",
       "css": "./dist/css/",
       "scss": "./dist/scss/",
@@ -43,7 +41,7 @@
     }
   },
   "dependencies": {
-    "bootstrap": "4.0.0"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "6.26.0",

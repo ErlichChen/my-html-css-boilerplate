@@ -1,17 +1,15 @@
-
-// package
-const pkg = require('./package.json');
-
-// gulp
-const gulp = require('gulp');
-
-const browserSync = require('browser-sync').create();
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import gulpLoadPlugins from 'gulp-load-plugins';
+import pkg from './package.json';
 
 // load all plugins in 'devDependencies' into the vairable $
-const $ = require('gulp-load-plugins')({
+const $ = gulpLoadPlugins({
   pattern: ['*'],
   scope: ['devDependencies'],
 });
+
+const { reload } = browserSync.reload;
 
 // const onError = (err) => {
 //   console.log(err);
@@ -54,5 +52,16 @@ gulp.task('html', () => {
     // Output files
     .pipe($.if('*.html', $.size({ title: 'html', showFiles: true })))
     .pipe(gulp.dest(pkg.paths.dist.html));
+});
+
+gulp.task('serve', [], () => {
+  browserSync({
+    notify: false,
+    logPrefix: 'WSK',
+    server: pkg.paths.src.html,
+    port: 3000,
+  });
+
+  gulp.watch([pkg.paths.src.html], reload);
 });
 
