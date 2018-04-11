@@ -57,8 +57,8 @@ gulp.task('html', () => {
 gulp.task('serve', [], () => {
   browserSync({
     notify: false,
-    logPrefix: 'WSK',
-    server: pkg.paths.src.html,
+    logPrefix: 'CC32',
+    server: pkg.paths.dest.html,
     port: 3000,
   });
 

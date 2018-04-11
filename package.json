@@ -20,7 +20,7 @@
       "img": "./src/img/",
       "fonts": "./src/fonts/"
     },
-    "dist": {
+    "dest": {
       "html": "./dist/html/",
       "css": "./dist/css/",
       "scss": "./dist/scss/",
