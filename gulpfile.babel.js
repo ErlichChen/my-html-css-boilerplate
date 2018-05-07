@@ -1,4 +1,6 @@
 import gulp from 'gulp';
+import del from 'del';
+import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import pkg from './package.json';
@@ -23,6 +25,9 @@ const banner = ['/*!\n',
   ' */\n',
   '',
 ].join('');
+
+// Clean files for changes & reload
+gulp.task('clean', () => del(['dist/*', 'verdor/*']));
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', () => {
@@ -51,7 +56,7 @@ gulp.task('html', () => {
     })))
     // Output files
     .pipe($.if('*.html', $.size({ title: 'html', showFiles: true })))
-    .pipe(gulp.dest(pkg.paths.dist.html));
+    .pipe(gulp.dest(pkg.paths.dest.html));
 });
 
 gulp.task('serve', [], () => {
@@ -65,3 +70,11 @@ gulp.task('serve', [], () => {
   gulp.watch([pkg.paths.src.html], reload);
 });
 
+// Build production files, the default task
+gulp.task('default', ['clean'], cb =>
+  runSequence(
+    ['html'],
+    'serve',
+    cb,
+  )
+);

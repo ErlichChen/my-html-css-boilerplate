@@ -28,9 +28,7 @@
       "img": "./dist/img/",
       "fonts": "./dist/fonts/"
     },
-    "build": {
-
-    },
+    "build": {},
     "bootstrap": {
       "src": [
         "./node_modules/bootstrap/dist/**/*",
