@@ -11,8 +11,6 @@ const $ = gulpLoadPlugins({
   scope: ['devDependencies'],
 });
 
-const { reload } = browserSync.reload;
-
 // const onError = (err) => {
 //   console.log(err);
 // };
@@ -60,14 +58,14 @@ gulp.task('html', () => {
 });
 
 gulp.task('serve', [], () => {
-  browserSync({
+  browserSync.init({
     notify: false,
     logPrefix: 'CC32',
-    server: pkg.paths.dest.html,
+    server: pkg.paths.src.html,
     port: 3000,
   });
 
-  gulp.watch([pkg.paths.src.html], reload);
+  gulp.watch([pkg.paths.src.html]).on('change', browserSync.reload);
 });
 
 // Build production files, the default task
