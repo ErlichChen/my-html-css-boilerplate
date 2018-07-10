@@ -61,7 +61,7 @@ gulp.task('serve', [], () => {
   browserSync.init({
     notify: false,
     logPrefix: 'CC32',
-    server: pkg.paths.src.html,
+    server: pkg.paths.src.baseExampleHtml,
     port: 3000,
   });
 
