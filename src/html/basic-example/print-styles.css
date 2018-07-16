@@ -1,0 +1,7 @@
+@media print {
+  a {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,7 @@
+@media screen and (max-width:800px) {
+  a {
+    background-color: gray;
+    color: white;
+    padding: 0.5em;
+  }
+}
