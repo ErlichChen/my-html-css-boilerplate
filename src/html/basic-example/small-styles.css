@@ -3,4 +3,11 @@
     color: red;
     padding: 0.5em;
   }
+  a:link, a:visited {
+    color: blue;
+    text-decoration: underline; cursor: auto;
+  }
+  a:link:active, a:visited:active {
+    color: blue;
+  }
 }
