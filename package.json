@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "test": "test",
+    "test": "mocha ./src/js/test/test.js",
     "server": "nodemon --exec babel-node --presets env ./src/server.js"
   },
   "paths": {
@@ -47,12 +47,11 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "browser-sync": "2.23.6",
-    "nodemon": "1.18.4",
     "del": "^3.0.0",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -60,11 +59,13 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "gulp": "3.9.1",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-useref": "^3.1.5",
-    "gulp-if": "^2.0.2",
     "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-size": "^3.0.0",
+    "gulp-useref": "^3.1.5",
+    "mocha": "^5.2.0",
+    "nodemon": "1.18.4",
     "run-sequence": "^2.2.1"
   }
 }
