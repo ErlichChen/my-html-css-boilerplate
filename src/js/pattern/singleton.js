@@ -1,4 +1,4 @@
-var SingleTon = {
+const Singleton = {
   attribute1: true,
   attribute2: 10,
 
@@ -9,3 +9,7 @@ var SingleTon = {
 
   }
 }
+
+Singleton.attribute1 = false;
+var total = Singleton.attribute2 + 5;
+var result = Singleton.method1();

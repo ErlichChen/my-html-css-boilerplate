@@ -1,1 +1,1 @@
-# my-html-css-boilerplate
+# example-html-css-js-boilerplate
