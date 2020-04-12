@@ -1,0 +1,33 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/**********************************************
+*** HEADER
+**********************************************/
+
+header {
+  position: relative;
+  height: 20vh;
+  background-color: #28B9B5;
+}
+
+.todolist-title {
+  position: absolute;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
