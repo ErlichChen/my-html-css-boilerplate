@@ -1,0 +1,22 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "test js",
+  "main": "index.js",
+  "author": "chenxuewei",
+	"license": "MIT",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"bluebird": "3.5.4",
+		"co": "4.6.0"
+	},
+	"devDependencies": {
+		"tslint": "^5.16.0"
+	},
+	"engines": {
+		"node": ">=8"
+	}
+}
+

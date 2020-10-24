@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS position</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.sticky {
+			position: -webkit-sticky;
+  		position: sticky;
+			width: 50%;
+			height: 100px;
+  		top: 10px;
+			border: 2px solid red;
+			margin: 10px;
+			background-color: rebeccapurple;
+			color: white;
+		}
+
+		.static {
+			width: 50%;
+			height: 300px;
+			border: 2px solid olivedrab;
+			margin: 10px;
+			background-color: orange;
+			color: white;
+		}
+
+		.relative {
+			position: relative;
+			width: 50%;
+			height: 300px;
+			top: 10px;
+			left: 10px;
+			border: 2px solid greenyellow;
+			background-color: yellowgreen;
+			color: white;
+		}
+
+		.absolute {
+			position: absolute;
+			width: 40%;
+			height: 100px;
+			top: 10px;
+			left: 55%;
+			border: 2px solid green;
+			background-color: green;
+			color: white;
+		}
+
+		.fixed {
+			position: fixed;
+			width: 40%;
+			height: 100px;
+			left: 55%;
+			bottom: 0;
+			border: 2px solid cyan;
+			background-color: cadetblue;
+			color: white;
+		}
+
+    .outside {
+			position: relative;
+			width: 50%;
+			height: 300px;
+			top: 20px;
+			left: 10px;
+			border: 2px solid brown;
+			background-color: blue;
+			color: white;
+		}
+
+    .inside {
+			position: relative;
+			top: 50%;
+  		left: 50%;
+			width: 200px;
+			height: 100px;
+			transform: translate(-50%, -50%);
+			border: 2px solid purple;
+			background-color: purple;
+		}
+
+		.text {
+			position: absolute;
+			width: 40%;
+			top: 110px;
+			left: 55%;
+			border: 2px solid purple;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="sticky">sticky</div>
+	<div class="static">static</div>
+	<div class="relative">relative</div>
+	<div class="fixed">fixed</div>
+	<div class="outside">outside
+		<div class="inside">inside</div>
+	</div>
+	<div class="absolute">absolute</div>
+	<div class="text">
+		<ul>
+			<li>
+				<h5>static</h5>
+				<p>This is the default normal flow of the document.
+					The top, right, bottom, left, and z-index have no effect.</p>
+			</li>
+			<li>
+				<h5>relative</h5>
+				<p>The element is positioned according to the normal of the document,
+					and then offset relative to itself based on the values of top, right, bottom, and left.
+					This value creates a new stacking context when the value of z-index is not auto.
+					Its effect on table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+				</p>
+			</li>
+			<li>
+				<h5>absolute</h5>
+				<p>The element is removed from the normal document flow,
+					and no space is created for the element in the page layout.
+					It is positioned relative to its closest positioned ancestor, if any;
+					otherwise, it is placed relative to the initial containing block.
+					Its final position is determined by the values to top, right, bottom, and left.
+					This value creates a new stacking context when the value of z-index is not auto.
+					The margins of absolutely positioned boxes do not collapse with other margins.
+				</p>
+			</li>
+			<li>
+				<h5>fixed</h5>
+				<p>The element is removed from the normal document flow, and no space is created for element in the page layout.
+					It is positioned relative to the initial containing block established by the viewport,
+					except when one of its ancestors has a transform, perspective, or filter property set to something other than none,
+					in which case that ancestor behaves as the containing block.
+					Its final position is determined by the values of top, right, bottom, and left.
+					This value always creates a new stacking context. In printed documents, the element is placed in the same position on every page.
+				</p>
+			</li>
+			<li>
+				<h5>sticky</h5>
+				<p>The element is positioned according to the normal flow of the document,
+					and then offset relative to its nearest scrolling ancestor and containing block,
+					including table-related elements, based on the values of top, right, bottom, and left.
+					The offset does not affect the position of any other elements.
+					This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism"
+				</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

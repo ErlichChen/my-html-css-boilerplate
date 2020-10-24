@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS display</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				/* font-size: 0px; */
+				/* letter-spacing: 0px; */
+			}
+
+			.box1 {
+				width: 200px;
+				height: 150px;
+				border: 2px solid #4E342E;
+				background-color: #BCAAA4;
+			}
+			.child11 {
+				width: 100px;
+				height: 50px;
+				font-size: 15px;
+				background-color: #3F51B5;
+			}
+			.child12 {
+				width: 100px;
+				height: 50px;
+				font-size: 15px;
+				background-color: #03A9F4;
+			}
+			.child13 {
+				width: 100px;
+				height: 50px;
+				font-size: 15px;
+				background-color: #00BCD4;
+			}
+
+			.box2 {
+				width: 400px;
+				height: 150px;
+				border: 2px solid #4E342E;
+				margin-top: 20px;
+				background-color: #BCAAA4;
+			}
+			.child21 {
+				display: inline-block;
+				width: 100px;
+				height: 60px;
+				vertical-align: middle;
+				background-color: #3F51B5;
+			}
+			.child21 > p {
+				display: inline-block;
+				font-size: 15px;
+				background-color: white;
+			}
+			.child22 {
+				display: inline-block;
+				width: 100px;
+				height: 80px;
+				font-size: 15px;
+				background-color: #2196F3;
+			}
+			.child23 {
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				font-size: 15px;
+				background-color: #00BCD4;
+			}
+			.child24 {
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				font-size: 15px;
+				background-color: #009688;
+			}
+
+			.box3 {
+				width: 300px;
+				height: 150px;
+				border: 2px solid #4E342E;
+				margin-top: 20px;
+				background-color: #BCAAA4;
+			}
+			.child31 {
+				float: left;
+				width: 100px;
+				height: 60px;
+				font-size: 15px;
+				background-color: #3F51B5;
+			}
+			.child32 {
+				float: left;
+				width: 100px;
+				height: 80px;
+				font-size: 15px;
+				background-color: #2196F3;
+			}
+			.child33 {
+				float: left;
+				width: 100px;
+				height: 40px;
+				font-size: 15px;
+				background-color: #00BCD4;
+			}
+			.child34 {
+				float: left;
+				width: 100px;
+				height: 40px;
+				font-size: 15px;
+				background-color: #009688;
+			}
+
+			.text-aligin1 {
+				width: 300px;
+				height: 30px;
+				border: 2px solid #4E342E;
+				margin-top: 20px;
+				text-align: center;
+				background-color: #BCAAA4;
+			}
+
+			.text-aligin1 > p {
+				line-height: 30px;
+				font-size: 15px;
+			}
+
+			.text-aligin2 {
+				display: inline;
+				border: 2px solid #4E342E;
+				text-align: center;
+				font-size: 15px;
+				background-color: #BCAAA4;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="child11">
+				block
+			</div>
+			<div class="child12">
+				<span>block</span>
+			</div>
+			<div class="child13">
+				<p>block</p>
+			</div>
+		</div>
+
+		<div class="box2">
+			<div class="child21">
+				<p>inline-block</p>
+			</div>
+			<div class="child22">
+				<!-- <span>inline-block</span> -->
+			</div>
+			<div class="child23">
+				<!-- inline-block -->
+			</div>
+			<div class="child24">
+				<!-- <p>inline-block</p> -->
+			</div>
+		</div>
+
+		<div class="box3">
+			<div class="child31">
+				float
+			</div>
+			<div class="child32">
+				<span>float</span>
+			</div>
+			<div class="child33">
+				<p>float</p>
+			</div>
+			<div class="child34">
+				<p>float</p>
+			</div>
+		</div>
+
+		<div class="text-aligin1">
+			<p>text-aligin: center</p>
+		</div>
+
+		<div class="text-aligin2">
+			text-aligin: center
+		</div>
+
+		<h3>inline(行内元素)</h3>
+		使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行.
+		不能更改元素的height，width的值，大小由内容撑开.
+		可以使用padding上下左右都有效，margin只有left和right产生边距效果，但是top和bottom就不行.
+		<h3>block(块级元素)</h3>
+		使元素变成块级元素，独占一行，在不设置自己的宽度的情况下，块级元素会默认填满父级元素的宽度.
+		能够改变元素的height，width的值.
+		可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.
+		<h3>inline-block(融合行内于块级)</h3>
+		结合了inline与block的一些特点，结合了上述inline的第1个特点和block的第2,3个特点.
+		用通俗的话讲，就是不独占一行的块级元素.
+
+		<h3>行内</h3>
+		a, b, strong, span, img, label, button, input, select, textarea
+		<h3>块级</h3>
+		header, form, ul, ol, table, article, div, hr, aside, figure, canvas, video, audio, footer
+
+	</body>
+</html>

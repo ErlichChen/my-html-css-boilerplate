@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>CSS box</title>
+		<style>
+			@font-face {
+				font-family: 'robotothen';
+				src: url('./fonts/Roboto-Thin-webfont.eot');
+				src: url('./fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+							url('./fonts/Roboto-Thin-webfont.woff2') format('woff2'),
+							url('./fonts/Roboto-Thin-webfont.woff') format('woff'),
+							url('./fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+							url('./fonts/Roboto-Thin-webfont.svg#robotoregular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			* {
+				padding: 0;
+				margin: 0;
+				font-family: 'robotothen';
+			}
+
+			body {
+				background-color: #B3E5FC;
+			}
+
+			header {
+				height: 80px;
+				background-color: #4FC3F7;
+			}
+
+			h1 {
+				line-height: 80px;
+				color: white;
+				text-align: center;
+			}
+
+			main {
+				margin: 0 auto;
+			}
+
+			main p {
+				height: 30px;
+				line-height: 30px;
+				font-size: 20px;
+				text-align: center;
+				color: white;
+			}
+
+			.box-margin {
+				width: 80%;
+				height: 480px;
+				margin: 0 auto;
+				margin-top: 60px;
+				border: 2px dashed white;
+				background-color: #039BE5;
+			}
+
+			.box-border {
+				width: 90%;
+				height: 420px;
+				margin: 0 auto;
+				border: 2px solid white;
+				background-color: #0288D1;
+			}
+
+			.box-padding {
+				width: 90%;
+				height: 360px;
+				margin: 0 auto;
+				border: 2px dashed white;
+				background-color: #0277BD;
+			}
+
+			.box-content {
+				width: 90%;
+				height: 300px;
+				margin: 0 auto;
+				border: 2px solid white;
+				background-color: #01579B;
+			}
+
+			.box-content > p {
+				line-height: 300px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>CSS Box</h1>
+		</header>
+		<main>
+			<div class="box-margin">
+				<p>Margin</p>
+				<div class="box-border">
+					<p>border</p>
+					<div class="box-padding">
+						<p>Padding</p>
+						<div class="box-content">
+							<p>Content</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>

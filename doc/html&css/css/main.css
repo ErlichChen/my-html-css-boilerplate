@@ -1,0 +1,219 @@
+@import "colors.css";
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('./fonts/Roboto-Regular-webfont.eot');
+	src: url('./fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('./fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+			 url('./fonts/Roboto-Regular-webfont.woff') format('woff'),
+			 url('./fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+			 url('./fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotothen';
+	src: url('./fonts/Roboto-Thin-webfont.eot');
+	src: url('./fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('./fonts/Roboto-Thin-webfont.woff2') format('woff2'),
+			 url('./fonts/Roboto-Thin-webfont.woff') format('woff'),
+			 url('./fonts/Roboto-Thin-webfont.ttf') format('truetype'),
+			 url('./fonts/Roboto-Thin-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+  margin: 0;
+	font-family: 'robotothen';
+}
+
+body {
+	background-color:var(--lightGreen);
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color:var(--green);
+
+}
+
+nav a {
+	float: left;
+	color: var(--white);
+}
+
+.title {
+	padding: 0.5em;
+	text-align: center;
+	font-size: 3em;
+	color: var(--white);
+}
+
+.title .subtitle {
+	font-size: 0.5em;
+}
+
+header h2 {
+	color: var(--white);
+}
+
+.box-margin {
+	/* display: inline-block; */
+	width: 90%;
+	height: 160px;
+	margin: 0 auto;
+	border: 2px dashed var(--green);
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-margin > p {
+	color: var(--green);
+}
+
+.box-border {
+	height: 110px;
+	padding: 10px;
+	background-color: var(--lightGreen);
+}
+
+.box-border > p {
+	color: var(--white);
+}
+
+.box-padding {
+	height: 60px;
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-padding > p {
+	color: var(--green);
+}
+
+.box-content {
+	height: 20px;
+	border: 2px dashed var(--green);
+	padding: 10px;
+	background-color: var(--white);
+}
+
+.box-content > p {
+	color: var(--green);
+}
+
+
+
+/* header {
+	text-align: center;
+}
+
+.subtitle {
+	text-align: left;
+	text-indent: 2em;
+	font-size: 14px;
+}
+
+
+nav a {
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #2196F3;
+} */
+
+/* Font styling */
+
+.font_underline1 {
+	text-decoration: underline;
+}
+
+.font_underline2 {
+	text-decoration: underline dotted red;
+}
+
+.font_underline3 {
+	text-decoration: underline wavy red;
+}
+
+.font_underline4 {
+	text-decoration: underline overline red;
+}
+
+.font_underline5 {
+	text-decoration: line-through;
+}
+
+.font_family1 {
+	font-family: "Arial";
+}
+
+.font_family2 {
+	font-family: "Courier New";
+}
+
+.font_family3 {
+	font-family: "Georgia";
+}
+
+.font_family4 {
+	font-family: "Times New Roman";
+}
+
+.font_family5 {
+	font-family: "Verdana";
+}
+
+.font-stacks {
+	font-family: "Helvetica", "Arial", "sans-serif";
+}
+
+.font-size1 {
+	font-size: 14px;
+}
+
+.font-size2 {
+	font-size: 1em;
+}
+
+.font-size3 {
+	font-size: 1rem;
+}
+
+.test_a:link {  /* 未访问过的连接状态*/
+	color: #3c3c3c;
+	font-size: 25px;
+	text-decoration: none;  /*取消下划线*/
+	font-weight: 700;
+}
+
+.test_a:visited {  /*这个链接我们已经点过的样子  已访问过链接*/
+	color: orange;
+}
+
+.test_a:hover {  /*鼠标经过连接时候的样子*/
+	color: #f10215;
+}
+
+.test_a:active {  /*鼠标按下时候的样子*/
+	color: green;
+}
+
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}

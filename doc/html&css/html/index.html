@@ -1,0 +1,463 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML elements</title>
+	</head>
+	<body>
+		<div class="top">
+			<header>
+				<h1>HTML elements</h1>
+				<p></p>
+				<hr color="#03A9F4" width="100%">
+			</header>
+			<nav>
+				<ul>
+          <li>
+						<a href="#content">Content</a>
+						<ul>
+							<li><a href="#heading">Heading</a></li>
+							<li><a href="#paragraph">Paragraph</a></li>
+							<li><a href="#blockquote">Blockquote</a></li>
+							<li><a href="#list">List</a></li>
+							<li><a href="#table">Table</a></li>
+						</ul>
+          </li>
+          
+					<li>
+						<a href="#form">Form</a>
+						<ul>
+							<li><a href="#form_input">Input</a></li>
+							<li><a href="#form_button">Button</a></li>
+							<li><a href="#form_select">Select</a></li>
+							<li><a href="#form_radiobutton">Radio button</a></li>
+              <li><a href="#form_checkbox">Checkbox</a></li>
+              <li><a href="#form_textareas">Textareas</a></li>
+						</ul>
+          </li>
+          
+          <li>
+						<a href="#multimedia">Multimedia</a>
+						<ul>
+							<li><a href="#multimedia_image">Image</a></li>
+							<li><a href="#multimedia_audio">Audio</a></li>
+							<li><a href="#multimedia_video">Video</a></li>
+							<li><a href="#multimedia_canvas">Canvas</a></li>
+              <li><a href="#multimedia_meter">Meter</a></li>
+              <li><a href="#multimedia_progress">Progress</a></li>
+              <li><a href="#multimedia_svg">SVG</a></li>
+              <li><a href="#multimedia_iframe">IFrame</a></li>
+						</ul>
+          </li>
+          
+          <li>
+						<a href="#textcontent">Text content</a>
+						<ul>
+							<li><a href="#textcontent_hr">Hr</a></li>
+							<li><a href="#textcontent_code">Code</a></li>
+							<li><a href="#textcontent_inlinetext">Inline text</a></li>
+						</ul>
+          </li>
+
+				</ul>
+			</nav>
+			<main>
+				<section id="content">
+					<header>
+						<h1>Content</h1>
+					</header>
+					<article id="heading">
+						<header><h2>Heading</h2></header>
+						<div>
+							<h1>Heading level 1</h1>
+							<h2>Heading level 2</h2>
+							<h3>Heading level 3</h3>
+							<h4>Heading level 4</h4>
+							<h5>Heading level 5</h5>
+							<h6>Heading level 6</h6>
+						</div>
+						<footer><a href="#top">[Top]</a></footer>
+					</article>
+					<article id="paragraph">
+						<header><h2>Paragraph</h2></header>
+						<div>
+							<p>The element represents a paragraph. </p>
+							<p>Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.</p>
+						</div>
+						<footer><a href="#top">[Top]</a></footer>
+					</article>
+					<article id="blockquote">
+						<header><h2>Blockquote</h2></header>
+						<div>
+							<p>A block quotation indicates that the enclosed text is an texted quotation.</p>
+							<p>A URL for the source of the quotaion may be given using the cite attribute.</p>
+							<cite><a href="#!">Describe a reference.</a></cite>
+						</div>
+						<footer><a href="#top">[Top]</a></footer>
+					</article>
+					<article id="list">
+						<header><h2>List</h2></header>
+						<ul>
+							<li>ulist item1</li>
+							<li>ulist item2</li>
+							<li>ulist item3</li>
+						</ul>
+						<ol>
+							<li>olist item1</li>
+							<li>olist item2</li>
+							<li>olist item3</li>
+						</ol>
+						<dl>
+							<dt>dlist item1</dt>
+							<dd>dlist item1 description</dd>
+							<dt>dlist item2</dt>
+							<dd>dlist item2 description</dd>
+						</dl>
+						<footer><a href="#top">[Top]</a></footer>
+					</article>
+					<article id="table">
+							<header><h2>Table</h2></header>
+							<table width="500" border="1" cellspacing="0" cellpadding="0">
+								<caption>Table Caption</caption>
+								<thead>
+									<tr>
+										<th>head</th>
+										<th scope="col">head 1</th>
+										<th scope="col">head 2</th>
+										<th scope="col">head 3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">th1</th>
+										<td>td1</td>
+										<td>td2</td>
+										<td>td3</td>
+									</tr>
+									<tr>
+										<th scope="row">th2</th>
+										<td>td1</td>
+										<td colspan="2">td2</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">th3</th>
+										<td>td1</td>
+										<td colspan="2" rowspan="2">td2</td>
+									</tr>
+									<tr>
+										<td>td1</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th scope="row">footer</th>
+										<td colspan="3">footer 1</td>
+									</tr>
+								</tfoot>
+							</table>
+							<footer><a href="#top">[Top]</a></footer>
+						</article>
+				</section>
+				<section id="form">
+					<h2>Forms</h2>
+					<form>
+						<fieldset id="forms_input">
+							<legend>Input</legend>
+							<p>
+								<label for="input_text">Text Input</label>
+								<input id="input_text" type="text" placeholder="Text Input">
+							</p>
+							<p>
+								<label for="input_password">Password</label>
+								<input id="input_password" type="password" placeholder="Type your Password">
+							</p>
+							<p>
+								<label for="input_webaddress">Web Address</label>
+								<input id="input_webaddress" type="url" placeholder="http://yoursite.com">
+							</p>
+							<p>
+								<label for="input_emailaddress">Email Address</label>
+								<input id="input_emailaddress" type="email" placeholder="name@email.com">
+							</p>
+							<p>
+								<label for="input_phone">Phone Number</label>
+								<input id="input_phone" type="tel" placeholder="(999) 999-9999">
+							</p>
+							<p>
+								<label for="input_search">Search</label>
+								<input id="input_search" type="search" placeholder="Enter Search Term">
+							</p>
+							<p>
+								<label for="input_text2">Number Input</label>
+								<input id="input_text2" type="number" placeholder="Enter a Number">
+							</p>
+							<p>
+								<label for="input_text3" class="error">Error</label>
+								<input id="input_text3" class="is-error" type="text" placeholder="Text Input">
+							</p>
+							<p>
+								<label for="input_text4" class="valid">Valid</label>
+								<input id="input_text4" class="is-valid" type="text" placeholder="Text Input">
+              </p>
+              <p>
+                <label for="ic">Color input</label>
+                <input type="color" id="ic" value="#000000">
+              </p>
+              <p>
+                <label for="in">Number input</label>
+                <input type="number" id="in" min="0" max="10" value="5">
+              </p>
+              <p>
+                <label for="ir">Range input</label>
+                <input type="range" id="ir" value="10">
+              </p>
+              <p>
+                <label for="idd">Date input</label>
+                <input type="date" id="idd" value="1970-01-01">
+              </p>
+              <p>
+                <label for="idm">Month input</label>
+                <input type="month" id="idm" value="1970-01">
+              </p>
+              <p>
+                <label for="idw">Week input</label>
+                <input type="week" id="idw" value="1970-W01">
+              </p>
+              <p>
+                <label for="idt">Datetime input</label>
+                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+              </p>
+              <p>
+                <label for="idtl">Datetime-local input</label>
+                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+              </p>
+						</fieldset>
+						<p><a href="#top">[Top]</a></p>
+
+						<fieldset id="forms_button">
+							<legend>Button</legend>
+							<p>
+								<input type="submit" value="submit">
+								<input type="button" value="button">
+								<input type="reset" value="reset">
+								<input type="button" value="button" disabled>
+							</p>
+							<p>
+								<button type="submit">submit</button>
+								<button type="button">button</button>
+								<button type="reset">reset</button>
+								<button type="button" disabled>button</button>
+							</p>
+						</fieldset>
+						<p><a href="#top">[Top]</a></p>
+
+						<fieldset id="forms_select">
+							<legend>select</legend>
+							<p>
+								<select>
+                  <optgroup label="Group 1">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </optgroup>
+                  <optgroup label="Group 2">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </optgroup>
+                </select>
+                
+              </p>
+              <p>
+                <select>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </p>
+						</fieldset>
+            <p><a href="#top">[Top]</a></p>
+            
+            <fieldset id="forms_radiobutton">
+              <legend>Radio button</legend>
+              <ul class="list">
+                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+
+            <fieldset id="forms_checkbox">
+              <legend>Checkbox</legend>
+              <ul class="list">
+                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" class="checkbox" checked="checked"> Option 1</label></li>
+                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" class="checkbox"> Option 2</label></li>
+                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" class="checkbox"> Option 3</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+
+            <fieldset id="forms_textareas">
+              <legend>Textareas</legend>
+              <p>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+
+          </form>
+        </section>
+      
+        <section>
+          <header><h1>Multimedia</h1></header>
+          
+          <article id="multimedia_image">
+						<header><h2>Image</h2></header>
+						<div>
+              <figure>
+                <img width="200" height="200" src="https://raw.githubusercontent.com/ErlichChen/example-asset/master/wildlife/512x512/panda.png" alt="Image alt text">
+                <figcaption>Here is a caption for this image.</figcaption>
+              </figure>
+						</div>
+						<footer><a href="#top">[Top]</a></footer>
+          </article>
+
+          <article id="multimedia_audio">
+            <header><h2>Audio</h2></header>
+            <div>
+              <audio controls
+                src="https://raw.githubusercontent.com/ErlichChen/example-asset/master/audio/canon.mp3">
+                Your browser does not support the element.
+                <code>audio</code>
+              </audio>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_video">
+            <header><h2>Video</h2></header>
+            <div>
+              <video controls width="450" height="300">
+                <source src="https://raw.githubusercontent.com/ErlichChen/example-asset/master/video/kobe.mp4"
+                        type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_canvas">
+            <header><h2>Canvas</h2></header>
+            <div>
+              <canvas id="canvas">
+                <script>
+                  var c = document.getElementById("canvas");
+                  var ctx = canvas.getContext('2d'); 
+                  ctx.fillStyle = 'green'; 
+                  ctx.fillRect(10, 10, 100, 100);
+                </script> 
+              </canvas>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_meter">
+            <header><h2>Meter</h2></header>
+            <div>
+              <meter value="2" min="0" max="10">2 out of 10</meter>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_progress">
+            <header><h2>Progress</h2></header>
+            <div>
+              <progress id="file" max="100" value="70">70%</progress>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_svg">
+            <header><h2>SVG</h2></header>
+            <div>
+              <svg width="100px" height="100px">
+                <circle cx="100" cy="100" r="100" fill="#1fa3ec"/>
+              </svg>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="multimedia_iframe">
+            <header><h2>IFrame</h2></header>
+            <div><iframe src="index.html" height="300"></iframe></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          
+        </section>
+
+        <section>
+          <header><h1>Textcontent</h1></header>
+
+          <article id="textcontent_hr">
+            <header><h2>Hr</h2></header>
+            <div>
+              <hr color="#4FC3F7" width="100%">
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="textcontent_code">
+            <header><h1>Code</h1></header>
+            <div>
+              <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+              <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+              <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+              <h6>Pre-formatted text</h6>
+                <pre>&nbsp;P R E F O R M A T T E D T E X T
+! " # $ &yen; % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ &nbsp;
+                </pre>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+          <article id="textcontent_inlinetext">
+            <header><h1>Inline text</h1></header>
+            <div>
+              <p><a href="#!">This is a text link</a>.</p>
+              <p><strong>Strong importance element.</strong></p>
+              <p><em>This text has added emphasis.</em></p>
+              <p>The <b>b element</b> bring attention to element.</p>
+              <p>The <i>i element</i> represents a range of text.</p>
+              <p>The <u>u element</u> unarticulated annotation element.</p>
+              <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+              <p><s>This text has a strikethrough</s>.</p>
+              <p>Superscript<sup>®</sup>.</p>
+              <p>Subscript for things like H<sub>2</sub>O.</p>
+              <p><small>This small text is small for for fine print, etc.</small></p>
+              <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+              <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+              <p><cite>This is a citation.</cite></p>
+              <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+              <p>The <mark>mark element</mark> indicates a highlight.</p>
+              <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+              <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+
+        </section>
+			</main>
+			<footer>
+        <p>Code on <a href="https://github.com/ErlichChen/learning-notes">GitHub repo</a>.</p>
+			</footer>
+		</div>
+	</body>
+</html>

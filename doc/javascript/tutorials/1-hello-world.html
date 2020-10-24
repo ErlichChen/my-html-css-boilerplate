@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Learn JavaScript</title>
+</head>
+<body>
+<!--
+Best Practice: Where to include your tags
+1. Fetch the HTML page.
+2. Parse the HTML.
+3. The parser encounters a <script> tag referencing an external script file.
+4. The browser requests the script file. The parser blocks and stops parsing the other HTML on your page.
+5. After some time the script is downloaded and subsequently exected.
+6. The parser continues parsing the rest of the HTML document.
+
+Antiquated recommenation
+
+The old approach to solving this problem was to put <script> tags at the bottom of your <body>, because this ensures the parser isn't blocked until the very end.
+This approach has its own problem: the browser cannot start downloading the scripts until the entire document is parsed.
+For larger websites with large scripts & stylesheets, being able to download the script as soon as possible is very importand for performance.
+If your website doesn't load within 2 seconds, people will go to another website.
+In an optimal solution, the browser would start downloading your scripts as soon as possible, while at the same time parsing the rest of your document.
+
+The modern approach
+
+Browsers support the asyc and defer attributes on scripts. These attributes tell the browser it's safe to continue parsing while the scripts are being downloading.
+
+async
+<script type="text/javascript" src="path/to/script1.js" async></script>
+<script type="text/javascript" src="path/to/script2.js" async></script>
+Scripts with the async attribute are executed asynchronously. This implies that it's possible to script 2 is downloaded & executed before script 1.
+
+defer
+<script type="text/javascript" src="path/to/script1.js" defer></script>
+<script type="text/javascript" src="path/to/script2.js" defer></script>
+Scripts with the defer attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser.
+
+Conclusion
+
+The current state of the art is to put scripts in the <head> tag and use the async or defer attributes. The allows your scripts to be downloaded asap without blocking your browser.
+-->
+	<script src="2-data-types.js" />
+	<script src="3-control-flow.js" />
+</body>
+</html>

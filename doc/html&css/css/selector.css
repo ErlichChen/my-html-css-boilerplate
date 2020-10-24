@@ -1,0 +1,55 @@
+/* type selector */
+body {
+	background-color:var(--lightBlue);
+}
+
+/* universal selector */
+* {
+	/* font-family: Arial; */
+}
+
+/* class selector */
+.selector {
+	color: red;
+}
+
+/* id selector */
+#selector {
+	color: red;
+}
+
+/* attribute selector */
+a[title] {
+  color: purple;
+}
+
+/* pseudo class selector */
+.selector:hover {
+	color: purple;
+}
+
+/* pseudo element selector */
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+/* descendant combinator */
+.nav a {
+	color: orange;
+}
+
+/* child combinator */
+.nav> ul > li > a {
+	color: orange;
+}
+
+/* Adjacent sibling combinator */
+img + p {
+  font-weight: bold;
+}
+
+/* General sibling combinator */
+img ~ p {
+  color: red;
+}

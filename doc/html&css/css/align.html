@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS center</title>
+		<style type="text/css">
+			.box1 {
+				width: 500px;
+				height: 30px;
+    		text-align: center;
+				background-color: #81D4FA;
+			}
+			.align1 {
+				display: inline-block;
+				line-height: 30px;
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box2 {
+				width: 500px;
+				height: 30px;
+				text-align: center;
+				background-color: #81D4FA;
+			}
+			.align2 {
+				display: block;
+				width: 80px;
+				line-height: 30px;
+				margin: 0 auto;
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box3 {
+				width: 500px;
+				text-align: center;
+    		background: #81D4FA;
+			}
+			.box3 ul {
+				display: inline-block;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.box3 li {
+				display: inline-block;
+				margin-right: 8px;
+			}
+
+			.box4 {
+				width: 200px;
+				height: 50px;
+				line-height: 50px;
+				background-color: #81D4FA;
+			}
+			.align4 {
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box5 {
+				display: table-cell;
+				width: 200px;
+				height: 50px;
+				background-color: #81D4FA;
+				vertical-align: middle;
+			}
+			.align5 {
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box6 {
+				width: 200px;
+				height: 100px;
+				background-color: #81D4FA;
+			}
+			.align6 {
+				display: inline-block;
+				width: 100px;
+				height: 50px;
+				margin-top: 25px;
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box7 {
+				width: 200px;
+				height: 100px;
+				text-align: center;
+				background-color: #81D4FA;
+			}
+			.align7 {
+				line-height: 100px;
+				margin-top: 25px;
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box8 {
+				display: table-cell;
+				width: 200px;
+				height: 100px;
+				text-align: center;
+				vertical-align: middle;
+				background-color: #81D4FA;
+			}
+			.align8 {
+				display: inline-block;
+				color: white;
+				background-color: #0277BD;
+			}
+
+			.box9 {
+				display: table-cell;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				vertical-align: middle;
+				background-color: #81D4FA;
+			}
+			.align9 {
+				width: 100px;
+				height: 100px;
+				background-color: #0277BD;
+			}
+
+			.box10 {
+				position: relative;
+				width: 200px;
+				height: 100px;
+				background-color: #81D4FA;
+			}
+			.align10 {
+				position: absolute;
+				top: 50%;
+				left: 50%;                               /* 定位margin-left:50%的位置 */
+				-webkit-transform: translate(-50%,-50%); /* Safari,Chrome */
+				-moz-transform: translate(-50%,-50%);    /* IE9+ */
+				transform: translate(-50%,-50%);
+				color: white;
+				background-color: #0277BD;
+		  }
+		</style>
+	</head>
+	<body>
+		<h3>1. 行内元素的水平居中</h3>
+		<div class="box1">
+			<div class="align1">align</div>
+		</div>
+		<h3>2. 块状元素的水平居中(定宽)</h3>
+		<div class="box2">
+			<div class="align2">align</div>
+		</div>
+		<h3>3. 块状元素的水平居中(不定宽)</h3>
+		<div class="box3">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+		<h3>4. 行内元素的垂直居中</h3>
+		<div class="box4">
+			<span class="align4">align</span>
+		</div>
+		<h3>5. 块级元素的垂直居中(不定高)</h3>
+		<div class="box5">
+			<div class="align5">align</div>
+		</div>
+		<h3>6. 块级元素的垂直居中(定高)</h3>
+		<div class="box6">
+			<div class="align6">align</div>
+		</div>
+		<h3>7. 水平垂直居中(行高)</h3>
+		<div class="box7">
+			<div class="align7">align</div>
+		</div>
+		<h3>8. 水平垂直居中</h3>
+		<div class="box8">
+			<div class="align8">align</div>
+		</div>
+		<h3>9. 图片垂直居中</h3>
+		<div class="box9">
+			<img class="align9" src="images/bear.png" alt="test">
+		</div>
+		<h3>10. 水平垂直居中</h3>
+		<div class="box10">
+			<div class="align10">align</div>
+		</div>
+	</body>
+</html>
